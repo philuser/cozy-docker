@@ -117,7 +117,7 @@ RUN chmod 0644 /etc/supervisor/conf.d/*
 RUN apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-EXPOSE 80 443
+EXPOSE 80 443 5984
 
 VOLUME ["/var/lib/couchdb", "/etc/cozy", "/usr/local/cozy", "/usr/local/var/cozy/"]
 
